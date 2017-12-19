@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.0.43",
+    "@types/node": "^8.5.1",
+    "@types/sequelize": "^4.0.79",
+    "ioredis": "^3.2.2",
+    "koa-router": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.7",
+    "node-uuid": "^1.4.8",
+    "require-directory": "^2.1.1",
+    "sequelize": "^4.28.6"
+  }
+}
